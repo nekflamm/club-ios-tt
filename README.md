@@ -14,6 +14,7 @@ As specs / requirements you’ll only count on the Figma file & on the current a
 Technical infos :
 * Architecture is based on “clean architecture principles” with UI layer (MVVM) & data layer (Usecases, Workers, Providers).
 * We’ve mocked the some part of the UserWorker on purpose to avoid dealing with authentication, tokens etc.
+* Following the mocked worker, it's ok to save the data only for the current app lifecycle, kill = back to initial state. 
 * UI layer is a MVVM (input/output) + RXSwift architecture (+ RxDatasource).
 
 > Tips: look around ++ you’ll find many useful piece of code, files so : help/clue. Also, check logs.
