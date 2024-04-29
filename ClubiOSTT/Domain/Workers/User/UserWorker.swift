@@ -51,22 +51,20 @@ class UserWorker: UserWorkerLogic {
     func getContentRequest() -> Single<TLResponse<[ContentRequest]>> {
         return Single.create { emitter -> Disposable in
             
-            let data = [
-                ContentRequest(id: UUID().uuidString,
-                               createdAt: Date(),
-                               title: "Video shoutout", description: "I'll shot a short video of me to shoutout your name", price: 999)
-            ]
+//            let data = [
+//                ContentRequest(id: UUID().uuidString,
+//                               createdAt: Date(),
+//                               title: "Video shoutout", description: "I'll shot a short video of me to shoutout your name", price: 999)
+//            ]
+            let data: [ContentRequest] = []
             
             Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
                 emitter(.success(TLResponse.success(data: data)))
+                //emitter(.success(.error(ContentRequestsError.cannotRetrieve)))
             }
             
             return Disposables.create()
         }
-        
-        
-        
-       // return Single.just(TLResponse.success(data: []))
     }
 
 }

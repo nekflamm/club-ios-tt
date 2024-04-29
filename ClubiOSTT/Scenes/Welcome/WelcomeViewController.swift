@@ -11,14 +11,6 @@ import RxCocoa
 
 /** Controller engaging the user to start using the app, simple action */
 class WelcomeViewController: BaseViewController {
-
-    // MARK: - Properties
-    
-    /** Subject indicating when the terms hyperlink is tapped */
-    let termsTap = PublishSubject<Void>()
-    
-    /** Subject indicating when the privacy hyperlink is tapped */
-    let privacyTap = PublishSubject<Void>()
     
     // MARK: - Private properties
 
@@ -63,7 +55,6 @@ class WelcomeViewController: BaseViewController {
     // MARK: - Functions
     
     /** Setup the views */
-    private func setupView() {
-    }
+    private func setupView() {}
     
 }

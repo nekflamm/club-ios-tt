@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3027640F-9D3E-4083-8465-E65328601C6C"
+            uuid = "2490ECAA-68DC-4144-A9B8-1AD21F718D0D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ClubiOSTT/Entities/Navigation/TLStoryboard.swift"
+            filePath = "ClubiOSTT/Scenes/Base/BaseViewController+KeyboardBinding.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getViewController()"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "keyboardWillShow(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -9,16 +9,16 @@ import RxSwift
 import Foundation
 
 /**
- Usecase logic protocol to communicate between ViewModel and UseCase
  Use to get the creator's content requests
+ Usecase logic protocol to communicate between ViewModel and UseCase
  */
 protocol GetContentRequestsUseCaseLogic {
 
     // MARK: - Functions
     
     /**
-     Get the current tutorial step of the content requests
-     - returns: An `Observable` of the optional step, nil if there's no step left
+     Get the list of content request of the creator, as `TLResponse`
+     - returns: A Single of the response with error, success & data
      */
     func get() -> Single<TLResponse<[ContentRequest]>>
     

@@ -23,6 +23,7 @@ class BaseViewModel: NSObject {
         let navigate: Driver<TLNavigate?>
         let close: Driver<TLNavigateClose?>
         let popup: Driver<TLPopupViewModel?>
+        let actionSheet: Driver<ActionSheetUI?>
     }
 
     // MARK: - Properties
@@ -44,6 +45,9 @@ class BaseViewModel: NSObject {
     
     /** Rx subject which notify the view when a popup should be displayed */
     let popup = PublishSubject<TLPopupViewModel?>()
+    
+    /** Rx subject which notify the view when an action sheet should be displayed */
+    let alertActions = PublishSubject<ActionSheetUI?>()
 
     // MARK: - Private properties
 
@@ -66,7 +70,8 @@ class BaseViewModel: NSObject {
 
         return Output(navigate: self.navigate.asDriver(onErrorJustReturn: nil),
                       close: self.close.asDriver(onErrorJustReturn: nil),
-                      popup: popup.asDriver(onErrorJustReturn: nil))
+                      popup: popup.asDriver(onErrorJustReturn: nil),
+                      actionSheet: alertActions.asDriver(onErrorJustReturn: nil))
     }
     
     /**

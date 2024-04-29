@@ -19,6 +19,9 @@
 		F463E66A2BD9605B003253BD /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463E6672BD9605B003253BD /* LoadMoreView.swift */; };
 		F463E66C2BD96397003253BD /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F463E66B2BD96397003253BD /* NVActivityIndicatorView */; };
 		F463E66E2BD96397003253BD /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = F463E66D2BD96397003253BD /* NVActivityIndicatorViewExtended */; };
+		F49F49362BDFD9D20032245D /* ContentRequestsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F49352BDFD9D20032245D /* ContentRequestsError.swift */; };
+		F49F49382BDFE3D90032245D /* UIViewController+ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F49372BDFE3D90032245D /* UIViewController+ActionSheet.swift */; };
+		F49F493D2BDFEA1D0032245D /* RequestsListArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F493C2BDFEA1D0032245D /* RequestsListArguments.swift */; };
 		F4B91B5E2BC42D3C00CCE6C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B91B5D2BC42D3C00CCE6C2 /* AppDelegate.swift */; };
 		F4B91B602BC42D3C00CCE6C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B91B5F2BC42D3C00CCE6C2 /* SceneDelegate.swift */; };
 		F4B91B672BC42D3E00CCE6C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B91B662BC42D3E00CCE6C2 /* Assets.xcassets */; };
@@ -146,6 +149,9 @@
 		F463E6652BD9605B003253BD /* LoadMoreViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreViewDelegate.swift; sourceTree = "<group>"; };
 		F463E6662BD9605B003253BD /* LoadMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadMoreView.xib; sourceTree = "<group>"; };
 		F463E6672BD9605B003253BD /* LoadMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
+		F49F49352BDFD9D20032245D /* ContentRequestsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRequestsError.swift; sourceTree = "<group>"; };
+		F49F49372BDFE3D90032245D /* UIViewController+ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActionSheet.swift"; sourceTree = "<group>"; };
+		F49F493C2BDFEA1D0032245D /* RequestsListArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsListArguments.swift; sourceTree = "<group>"; };
 		F4B91B5A2BC42D3C00CCE6C2 /* ClubiOSTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubiOSTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B91B5D2BC42D3C00CCE6C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B91B5F2BC42D3C00CCE6C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -422,6 +428,7 @@
 				F4B91B8A2BC6DAC400CCE6C2 /* RequestsListViewController.swift */,
 				F4B91B8B2BC6DAC400CCE6C2 /* RequestsListViewModel.swift */,
 				F4B91B852BC6DAC300CCE6C2 /* RequestsListViewModel+Analytics.swift */,
+				F49F493C2BDFEA1D0032245D /* RequestsListArguments.swift */,
 			);
 			path = RequestsList;
 			sourceTree = "<group>";
@@ -568,6 +575,7 @@
 				F4D9ADA52BCAC6300016163B /* UIApplication+Window.swift */,
 				F463E6582BD95F1E003253BD /* Int+DisplayablePrice.swift */,
 				F463E6622BD96013003253BD /* UIViewController+Haptic.swift */,
+				F49F49372BDFE3D90032245D /* UIViewController+ActionSheet.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -649,6 +657,7 @@
 			isa = PBXGroup;
 			children = (
 				F4D9ADC22BCAC96F0016163B /* RefreshUserError.swift */,
+				F49F49352BDFD9D20032245D /* ContentRequestsError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -855,6 +864,7 @@
 				F4D9AD7E2BCABB120016163B /* BannerViewManagerDelegate.swift in Sources */,
 				F4B91B8C2BC6DAC400CCE6C2 /* RequestsListViewModel+Analytics.swift in Sources */,
 				F4D9AD952BCAC1450016163B /* TLButton.swift in Sources */,
+				F49F493D2BDFEA1D0032245D /* RequestsListArguments.swift in Sources */,
 				F4D9ADA02BCAC5450016163B /* UIColor+Custom.swift in Sources */,
 				F4B91B9E2BC6DB1F00CCE6C2 /* BaseViewController.swift in Sources */,
 				F4D9ADB82BCAC7810016163B /* UIViewController+Navigation.swift in Sources */,
@@ -873,6 +883,7 @@
 				F4D9ADE52BCACDF80016163B /* TLDesignableView.swift in Sources */,
 				F4D9AD712BCABA2E0016163B /* SkippableObj.swift in Sources */,
 				F463E66A2BD9605B003253BD /* LoadMoreView.swift in Sources */,
+				F49F49382BDFE3D90032245D /* UIViewController+ActionSheet.swift in Sources */,
 				F4B91BA32BC6DB5900CCE6C2 /* AnalyticsProvider.swift in Sources */,
 				F4D9ADDC2BCACD8F0016163B /* CALayer+Shadow.swift in Sources */,
 				F4D9AD722BCABA2E0016163B /* NetworkError.swift in Sources */,
@@ -933,6 +944,7 @@
 				F4D9AD732BCABA2E0016163B /* TLResponse.swift in Sources */,
 				F4B91B922BC6DAC400CCE6C2 /* RequestsListViewModel.swift in Sources */,
 				F4D9ADB62BCAC7810016163B /* UIViewController+Popup.swift in Sources */,
+				F49F49362BDFD9D20032245D /* ContentRequestsError.swift in Sources */,
 				F4D9AD662BCA9AB50016163B /* WelcomeAnalytic.swift in Sources */,
 				F4D9AD632BCA9AB50016163B /* WelcomeViewController+UITextViewDelegate.swift in Sources */,
 				F4B91B8E2BC6DAC400CCE6C2 /* RequestsListAnalytic.swift in Sources */,

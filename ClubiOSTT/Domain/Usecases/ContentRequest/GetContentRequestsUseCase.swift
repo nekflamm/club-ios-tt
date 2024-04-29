@@ -30,6 +30,9 @@ class GetContentRequestsUseCase: GetContentRequestsUseCaseLogic {
     /** Refers to the `get` function of the `GetContentRequestsUseCaseLogic`. */
     func get() -> Single<TLResponse<[ContentRequest]>> {
         return userWorker.getContentRequest()
+            .map { TLResponse<[ContentRequest]>(success: $0.success,
+                                                errors: $0.errors,
+                                                data: $0.data?.sorted { $0.createdAt < $1.createdAt })}
     }
     
 }

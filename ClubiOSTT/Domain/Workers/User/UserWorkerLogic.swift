@@ -22,6 +22,9 @@ protocol UserWorkerLogic {
      */
     func getUser() -> Observable<User?>
     
-    /***/
+    /**
+     Retrieve the list of content request for a creator as `TLResponse`
+     - returns: The response (success/error) and data if existing
+     */
     func getContentRequest() -> Single<TLResponse<[ContentRequest]>>
 }

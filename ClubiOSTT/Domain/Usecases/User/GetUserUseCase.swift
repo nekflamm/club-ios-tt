@@ -26,17 +26,7 @@ class GetUserUseCase: GetUserUseCaseLogic {
     
     // MARK: - Initialisers
     
-    private init() {
-//        authProvider.getUserLoggedIn()
-//            .subscribe(onNext: { [unowned self] user in
-//                if let user = user {
-//                    self.premiumWorker.initialize(userId: user.uid)
-//                } else {
-//                    self.userWorker.reset()
-//                }
-//            })
-//            .disposed(by: disposeBag)
-    }
+    private init() {}
 
     // MARK: - Functions
 

@@ -142,6 +142,11 @@ class BaseViewController: UIViewController {
                 self.handleDisplayPopup(popupViewModel: popupViewModel)
             }).disposed(by: disposeBag)
             
+            /** Get driven by a `ActionSheetUI` containing the data to display a given action sheet */
+            output.actionSheet.filterNil().drive(onNext: { [unowned self] model in
+                self.displayActionSheet(from: model)
+            }).disposed(by: disposeBag)
+            
         } else {
             Log.record("Unable to bind the output - nil value")
         }

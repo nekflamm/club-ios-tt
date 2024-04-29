@@ -13,6 +13,10 @@ import RxDataSources
 /** Screen displaying the creator's requests list */
 class RequestsListViewController: BaseViewController {
     
+    // MARK: - Properties
+
+    override var enableBindUnbind: Bool { false }
+    
     // MARK: - Private properties
     
     /** View model created by dependency injection */
@@ -25,10 +29,6 @@ class RequestsListViewController: BaseViewController {
     private lazy var bannerViewManager: BannerViewManager = {
         return BannerViewManager()
     }()
-
-    // MARK: - Override properties
-
-    override var enableBindUnbind: Bool { false }
 
     // MARK: - IBOutlets
 
@@ -70,7 +70,8 @@ class RequestsListViewController: BaseViewController {
 
     /** Refers to the `bindViewModel` of the `BaseViewModel` */
     override func bindViewModel() {
-        let input = RequestsListViewModel.Input(isLoading: rx.isLoading,
+        let input = RequestsListViewModel.Input(args: args as? RequestsListArguments,
+                                                isLoading: rx.isLoading,
                                                 closeTap: navigationBar.leftButton.rx.tap,
                                                 viewDidAppear: rx.viewDidAppear,
                                                 addRequestTap: addRequestButton.rx.tap,

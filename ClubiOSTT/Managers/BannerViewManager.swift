@@ -15,7 +15,10 @@ class BannerViewManager {
 
     /** Reference to the `BannerViewManagerDelegate` instanciating this manager */
     weak var delegate: BannerViewManagerDelegate?
-
+    
+    /** Common instance of self. */
+    static let shared = BannerViewManager()
+    
     // MARK: - Private properties
 
     /** The parent view where the `BannerView` should be shown. */
