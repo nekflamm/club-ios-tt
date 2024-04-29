@@ -17,7 +17,9 @@ Technical infos :
 * Following the mocked worker, it's ok to save the data only for the current app lifecycle, kill = back to initial state. 
 * UI layer is a MVVM (input/output) + RXSwift architecture (+ RxDatasource).
 
-> Tips: look around ++ you’ll find many useful piece of code, files so : help/clue. Also, check logs.
+> Tips:
+> look around ++ you’ll find many useful piece of code, files so : help/clue. Also, check logs.
+> almost everything has been done on purpose on the project, to help & to guide the developer.
 
 ## Figma file
 https://www.figma.com/file/wSk8vXwbY9Pw6aTnkgcbNW/iOS-Technical-test-ClubMVP?type=design&node-id=0%3A1&mode=design&t=KgYFXVNg433tLeR5-1
