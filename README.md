@@ -20,3 +20,7 @@ Technical infos :
 
 ## Figma file
 https://www.figma.com/file/wSk8vXwbY9Pw6aTnkgcbNW/iOS-Technical-test-ClubMVP?type=design&node-id=0%3A1&mode=design&t=KgYFXVNg433tLeR5-1
+
+## Launch instructions
+Pods folder is already filled on purpose so no need to pod install, you can compile & run. 
+If you need any extra lib, it's your choice, we'll let you re-install the pods. 
