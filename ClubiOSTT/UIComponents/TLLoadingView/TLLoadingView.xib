@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TLLoadingView" customModule="Club" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="AXW-XV-hSx" id="N7F-G9-AxZ"/>
+                <outlet property="containerView" destination="2sj-6q-s8r" id="aMo-GQ-KPf"/>
+                <outlet property="contentView" destination="fda-d6-AbP" id="BKo-xe-Tjc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fda-d6-AbP">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sj-6q-s8r" customClass="TLDesignableView" customModule="Club" customModuleProvider="target">
+                    <rect key="frame" x="165.5" y="406.5" width="83" height="83"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXW-XV-hSx" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                            <rect key="frame" x="25" y="25" width="33" height="33"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="AXW-XV-hSx" secondAttribute="height" multiplier="1:1" id="w7f-RE-65f"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="circleStrokeSpin"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" name="limeDisabled"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="AXW-XV-hSx" firstAttribute="centerX" secondItem="2sj-6q-s8r" secondAttribute="centerX" id="CdQ-oV-34j"/>
+                        <constraint firstAttribute="width" secondItem="2sj-6q-s8r" secondAttribute="height" multiplier="1:1" id="HvG-4U-dZW"/>
+                        <constraint firstItem="AXW-XV-hSx" firstAttribute="height" secondItem="2sj-6q-s8r" secondAttribute="height" multiplier="0.4" id="RUp-LL-lM5"/>
+                        <constraint firstItem="AXW-XV-hSx" firstAttribute="centerY" secondItem="2sj-6q-s8r" secondAttribute="centerY" id="ylu-GY-fCx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="LeK-48-NEd"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2sj-6q-s8r" firstAttribute="centerY" secondItem="fda-d6-AbP" secondAttribute="centerY" id="6Sx-rh-3xX"/>
+                <constraint firstItem="2sj-6q-s8r" firstAttribute="width" secondItem="fda-d6-AbP" secondAttribute="width" multiplier="0.2" id="Gt3-ce-Uge"/>
+                <constraint firstItem="2sj-6q-s8r" firstAttribute="centerX" secondItem="fda-d6-AbP" secondAttribute="centerX" id="NsX-CD-smh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="888" y="195"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="limeDisabled">
+            <color red="0.17647058823529413" green="0.20784313725490197" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

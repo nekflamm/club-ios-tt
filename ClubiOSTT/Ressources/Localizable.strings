@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  ClubiOSTT
+
+  Created by Kévin Empociello on 4/13/24.
+*/
+
+/** 
+ COMMON
+ */
+"common.continue" = "Continue";
+
+/**
+ WELCOME
+ */
+"welcome.title" = "Monetize your content.";
+"welcome.legals" = "By continuing you agree to our
+Terms of Use and Privacy Policy";
+
+/**
+ CONTENT REQUEST LIST
+ */
+"contentRequestList.title" = "Requests";
+"contentRequestList.placeholder.title" = "Your Request List";
+"contentRequestList.placeholder.subtitle" = "Create a list of specific content that\nyour members can pay to request.";

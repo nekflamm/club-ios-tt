@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nsd-Im-95m">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Heavy.otf">
+            <string>SFProDisplay-Heavy</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="rwN-Lf-PaJ">
+            <objects>
+                <viewController id="nsd-Im-95m" customClass="WelcomeViewController" customModule="ClubiOSTT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D0O-bk-GLY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-typo" translatesAutoresizingMaskIntoConstraints="NO" id="zp0-ul-VAk">
+                                <rect key="frame" x="133.66666666666666" y="92" width="122.66666666666666" height="30.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zp0-ul-VAk" secondAttribute="height" multiplier="65:16" id="zeB-10-NPo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTo-nR-Nek" userLabel="Subtitle Label">
+                                <rect key="frame" x="16" y="150.33333333333334" width="358" height="32.666666666666657"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Heavy" family="SF Pro Display" pointSize="28"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizableString" value="welcome.title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yU4-va-kAN">
+                                <rect key="frame" x="32" y="746.66666666666663" width="326" height="47.333333333333371"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">By signing up you agree to Club
+Terms of Use and Privacy Policy</string>
+                                <color key="textColor" white="1" alpha="0.59882546768707479" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizableString" value="welcome.legals"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="nsd-Im-95m" id="NNY-i7-tFz"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxW-tB-fmT" customClass="TLButton" customModule="ClubiOSTT" customModuleProvider="target">
+                                <rect key="frame" x="16" y="682" width="358" height="48.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="templateAdapter">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizableString" value="common.continue"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-char" translatesAutoresizingMaskIntoConstraints="NO" id="uSN-Av-fkV">
+                                <rect key="frame" x="156" y="344" width="78" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uSN-Av-fkV" secondAttribute="height" multiplier="1:1" id="NM4-9r-R1w"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fBW-6W-p3l"/>
+                        <color key="backgroundColor" name="black"/>
+                        <constraints>
+                            <constraint firstItem="fBW-6W-p3l" firstAttribute="trailing" secondItem="PTo-nR-Nek" secondAttribute="trailing" constant="16" id="6Sj-Cn-VzH"/>
+                            <constraint firstItem="fBW-6W-p3l" firstAttribute="bottom" secondItem="yU4-va-kAN" secondAttribute="bottom" constant="16" id="78h-ER-mTe"/>
+                            <constraint firstItem="yU4-va-kAN" firstAttribute="leading" secondItem="fBW-6W-p3l" secondAttribute="leading" constant="32" id="8Fy-LD-oXp"/>
+                            <constraint firstItem="zp0-ul-VAk" firstAttribute="top" secondItem="fBW-6W-p3l" secondAttribute="top" constant="45" id="E32-An-gdy"/>
+                            <constraint firstItem="yU4-va-kAN" firstAttribute="top" secondItem="fxW-tB-fmT" secondAttribute="bottom" constant="16" id="IrU-bk-5tg"/>
+                            <constraint firstItem="fBW-6W-p3l" firstAttribute="trailing" secondItem="yU4-va-kAN" secondAttribute="trailing" constant="32" id="SZC-jY-Bsk"/>
+                            <constraint firstItem="zp0-ul-VAk" firstAttribute="centerX" secondItem="D0O-bk-GLY" secondAttribute="centerX" id="T43-FO-lb0"/>
+                            <constraint firstItem="zp0-ul-VAk" firstAttribute="width" secondItem="D0O-bk-GLY" secondAttribute="width" multiplier="31.5%" id="WAR-ju-OTt"/>
+                            <constraint firstItem="PTo-nR-Nek" firstAttribute="top" secondItem="zp0-ul-VAk" secondAttribute="bottom" constant="28" id="aTE-Cm-NbK"/>
+                            <constraint firstItem="fBW-6W-p3l" firstAttribute="trailing" secondItem="fxW-tB-fmT" secondAttribute="trailing" constant="16" id="fgO-Oj-ZB3"/>
+                            <constraint firstItem="fxW-tB-fmT" firstAttribute="leading" secondItem="fBW-6W-p3l" secondAttribute="leading" constant="16" id="fnK-hg-f6R"/>
+                            <constraint firstItem="fxW-tB-fmT" firstAttribute="height" secondItem="fBW-6W-p3l" secondAttribute="width" multiplier="12.5%" id="gk6-ZF-qTt"/>
+                            <constraint firstItem="uSN-Av-fkV" firstAttribute="bottom" secondItem="D0O-bk-GLY" secondAttribute="centerY" id="pkQ-tc-c2z"/>
+                            <constraint firstItem="uSN-Av-fkV" firstAttribute="centerX" secondItem="D0O-bk-GLY" secondAttribute="centerX" id="sX7-o3-08f"/>
+                            <constraint firstItem="PTo-nR-Nek" firstAttribute="leading" secondItem="fBW-6W-p3l" secondAttribute="leading" constant="16" id="tLI-eI-Psd"/>
+                            <constraint firstItem="uSN-Av-fkV" firstAttribute="width" secondItem="D0O-bk-GLY" secondAttribute="width" multiplier="0.2" id="tVe-Pr-cj9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizableString" value="welcome.title"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="7vz-pb-WJD"/>
+                    <connections>
+                        <outlet property="continueButton" destination="fxW-tB-fmT" id="ulg-Ap-5Ik"/>
+                        <outlet property="legalTextView" destination="yU4-va-kAN" id="mOk-Zy-2YF"/>
+                        <outlet property="subtitleLabel" destination="PTo-nR-Nek" id="wsm-HH-lFn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3YW-ZT-89E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741.53846153846155" y="145.73459715639811"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-char" width="107" height="107"/>
+        <image name="logo-typo" width="130" height="32"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

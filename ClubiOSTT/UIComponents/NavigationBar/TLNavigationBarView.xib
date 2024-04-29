@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TLNavigationBarView" customModule="Club" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="W2O-Ei-4GD"/>
+                <outlet property="indicatorView" destination="Vus-iH-PvY" id="9hJ-9P-yVa"/>
+                <outlet property="leftButton" destination="EoB-oC-Ocy" id="Q3c-Vc-iBY"/>
+                <outlet property="leftButtonWidthConstraint" destination="gDX-Np-jxD" id="dYB-0c-rNa"/>
+                <outlet property="rightButton" destination="Kz7-Sb-qZd" id="FDJ-Gg-P6v"/>
+                <outlet property="titleLabel" destination="xmp-vO-sDK" id="TN9-7S-AV1"/>
+                <outlet property="topBarConstraint" destination="nvQ-iX-FGb" id="1xN-z6-1gG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n44-1n-84q">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoB-oC-Ocy" customClass="HapticButton" customModule="Club" customModuleProvider="target">
+                            <rect key="frame" x="8" y="6" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Uww-2D-6m3"/>
+                                <constraint firstAttribute="width" constant="40" id="gDX-Np-jxD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="arrow_left"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmp-vO-sDK">
+                            <rect key="frame" x="207" y="26" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-Sb-qZd" customClass="HapticButton" customModule="Club" customModuleProvider="target">
+                            <rect key="frame" x="366" y="6" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="CLG-Qo-IC6"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="sl7-6I-S2y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vus-iH-PvY" userLabel="Indicator" customClass="TLRoundedView" customModule="Club" customModuleProvider="target">
+                            <rect key="frame" x="390" y="16" width="10" height="10"/>
+                            <color key="backgroundColor" name="cerise"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="284-mx-N7E"/>
+                                <constraint firstAttribute="width" constant="10" id="Rey-pp-oFi"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="black"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xmp-vO-sDK" secondAttribute="trailing" constant="32" id="7qd-nf-Snv"/>
+                        <constraint firstItem="xmp-vO-sDK" firstAttribute="centerY" secondItem="n44-1n-84q" secondAttribute="centerY" id="DVQ-TA-qtW"/>
+                        <constraint firstItem="EoB-oC-Ocy" firstAttribute="top" secondItem="n44-1n-84q" secondAttribute="top" constant="6" id="GxY-gq-KzQ"/>
+                        <constraint firstItem="Kz7-Sb-qZd" firstAttribute="top" secondItem="n44-1n-84q" secondAttribute="top" constant="6" id="IvF-CQ-C5o"/>
+                        <constraint firstItem="xmp-vO-sDK" firstAttribute="centerX" secondItem="n44-1n-84q" secondAttribute="centerX" id="NTx-2J-UXZ"/>
+                        <constraint firstAttribute="bottom" secondItem="Kz7-Sb-qZd" secondAttribute="bottom" constant="6" id="ZKR-FX-3oZ"/>
+                        <constraint firstItem="Vus-iH-PvY" firstAttribute="top" secondItem="Kz7-Sb-qZd" secondAttribute="top" constant="10" id="cz7-0p-3pq"/>
+                        <constraint firstAttribute="bottom" secondItem="EoB-oC-Ocy" secondAttribute="bottom" constant="6" id="fQX-Ve-hqJ"/>
+                        <constraint firstItem="xmp-vO-sDK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EoB-oC-Ocy" secondAttribute="trailing" constant="16" id="lrR-eI-AV3"/>
+                        <constraint firstItem="EoB-oC-Ocy" firstAttribute="leading" secondItem="n44-1n-84q" secondAttribute="leading" constant="8" id="tOa-9P-oNk"/>
+                        <constraint firstItem="Kz7-Sb-qZd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xmp-vO-sDK" secondAttribute="leading" constant="16" id="uu4-R4-qgt"/>
+                        <constraint firstAttribute="trailing" secondItem="Kz7-Sb-qZd" secondAttribute="trailing" constant="8" id="xWi-87-EQG"/>
+                        <constraint firstItem="Vus-iH-PvY" firstAttribute="trailing" secondItem="Kz7-Sb-qZd" secondAttribute="trailing" constant="-6" id="yd4-8w-W2b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="n44-1n-84q" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0Ql-I7-SXd"/>
+                <constraint firstAttribute="bottom" secondItem="n44-1n-84q" secondAttribute="bottom" id="1PS-9W-T85"/>
+                <constraint firstItem="n44-1n-84q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6yn-6b-03v"/>
+                <constraint firstItem="n44-1n-84q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nvQ-iX-FGb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-133.25892857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_left" width="20" height="20"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="cerise">
+            <color red="0.97647058823529409" green="0.0" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

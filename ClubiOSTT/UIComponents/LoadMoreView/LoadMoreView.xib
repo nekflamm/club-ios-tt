@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadMoreView" customModule="Club" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="762-eA-xoB" id="ZZs-Rz-2Np"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="L7S-kp-lgl"/>
+                <outlet property="errorView" destination="v2u-sH-GyN" id="Ky7-cq-8Mr"/>
+                <outlet property="loadingView" destination="Mf9-Nk-obj" id="nJW-D1-in5"/>
+                <outlet property="marginBottomConstraint" destination="2ue-te-YNj" id="3hK-y4-a7O"/>
+                <outlet property="marginTopConstraint" destination="a81-Yy-KYp" id="fy6-Sj-BT6"/>
+                <outlet property="retryButton" destination="3gx-ld-eYn" id="ysF-yg-so1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljX-t6-WBo">
+                    <rect key="frame" x="16" y="8" width="382" height="76"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mf9-Nk-obj">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="76"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="762-eA-xoB" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                    <rect key="frame" x="179" y="26" width="24" height="24"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="4d0-BN-23b"/>
+                                        <constraint firstAttribute="height" constant="24" id="D68-y1-Qc5"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="circleStrokeSpin"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" name="white"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="762-eA-xoB" firstAttribute="centerX" secondItem="Mf9-Nk-obj" secondAttribute="centerX" id="1o2-jB-7uW"/>
+                                <constraint firstItem="762-eA-xoB" firstAttribute="centerY" secondItem="Mf9-Nk-obj" secondAttribute="centerY" id="CAi-Xk-OgC"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2u-sH-GyN">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="76"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gx-ld-eYn">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="76"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                    <state key="normal" title="Load failed. Tap here to retry">
+                                        <color key="titleColor" name="warning"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizableString" value="singleChat.messages.loading.error"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTouchRetry" destination="-1" eventType="touchUpInside" id="xRb-3x-g7p"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="3gx-ld-eYn" firstAttribute="top" secondItem="v2u-sH-GyN" secondAttribute="top" id="3Ec-OH-E8c"/>
+                                <constraint firstAttribute="trailing" secondItem="3gx-ld-eYn" secondAttribute="trailing" id="7dC-G6-D5y"/>
+                                <constraint firstItem="3gx-ld-eYn" firstAttribute="leading" secondItem="v2u-sH-GyN" secondAttribute="leading" id="di4-os-be6"/>
+                                <constraint firstAttribute="bottom" secondItem="3gx-ld-eYn" secondAttribute="bottom" id="t4p-Di-IRb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="v2u-sH-GyN" secondAttribute="trailing" id="CPu-QK-g1N"/>
+                        <constraint firstItem="v2u-sH-GyN" firstAttribute="top" secondItem="ljX-t6-WBo" secondAttribute="top" id="JG6-d4-kJS"/>
+                        <constraint firstAttribute="trailing" secondItem="Mf9-Nk-obj" secondAttribute="trailing" id="KOq-TT-YX6"/>
+                        <constraint firstAttribute="bottom" secondItem="Mf9-Nk-obj" secondAttribute="bottom" id="VcE-Jk-XxW"/>
+                        <constraint firstItem="Mf9-Nk-obj" firstAttribute="top" secondItem="ljX-t6-WBo" secondAttribute="top" id="hsv-ps-pls"/>
+                        <constraint firstAttribute="trailing" secondItem="v2u-sH-GyN" secondAttribute="trailing" id="scp-1w-mlX"/>
+                        <constraint firstItem="Mf9-Nk-obj" firstAttribute="leading" secondItem="ljX-t6-WBo" secondAttribute="leading" id="ukS-OC-jsX"/>
+                        <constraint firstItem="v2u-sH-GyN" firstAttribute="leading" secondItem="ljX-t6-WBo" secondAttribute="leading" id="wby-CW-igK"/>
+                        <constraint firstAttribute="bottom" secondItem="v2u-sH-GyN" secondAttribute="bottom" id="zwU-Ss-ZOI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ljX-t6-WBo" secondAttribute="bottom" constant="16" id="2ue-te-YNj"/>
+                <constraint firstItem="ljX-t6-WBo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="8vC-5A-zFA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ljX-t6-WBo" secondAttribute="trailing" constant="16" id="CTZ-UG-UCK"/>
+                <constraint firstItem="ljX-t6-WBo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="a81-Yy-KYp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="warning">
+            <color red="1" green="0.19607843137254902" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

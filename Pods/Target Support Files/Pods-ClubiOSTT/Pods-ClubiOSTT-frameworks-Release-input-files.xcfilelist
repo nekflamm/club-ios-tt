@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-ClubiOSTT/Pods-ClubiOSTT-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IBLocalizable/IBLocalizable.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
