@@ -16,4 +16,7 @@ Technical infos :
 * We’ve mocked the some part of the UserWorker on purpose to avoid dealing with authentication, tokens etc.
 * UI layer is a MVVM (input/output) + RXSwift architecture (+ RxDatasource).
 
->Tips: look around ++ you’ll find many useful piece of code, files so : help/clue. Also, check logs.
+> Tips: look around ++ you’ll find many useful piece of code, files so : help/clue. Also, check logs.
+
+## Figma file
+https://www.figma.com/file/wSk8vXwbY9Pw6aTnkgcbNW/iOS-Technical-test-ClubMVP?type=design&node-id=0%3A1&mode=design&t=KgYFXVNg433tLeR5-1
