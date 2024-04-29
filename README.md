@@ -5,7 +5,7 @@ Content which can be requested by their community such as :
 - “Commercial promotion: I’ll test your product and create some content on it.”
 
 The current app is not complete, you land on the “request list” (loading, placeholder and list OK), but the rest is missing. 
-- Add an item / a content request.
+- Add a new content request.
 - Delete an item.
 - Edit an item.
 
